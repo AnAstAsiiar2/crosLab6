@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="200.0" prefHeight="600.0" alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sitesdb.controller.AddController">
+    <children>
+        <Label text="Site name:" />
+        <TextField fx:id="nameField" />
+
+        <Label text="URL:" />
+        <TextField fx:id="urlField" />
+
+        <Label text="Category:" />
+        <TextField fx:id="categoryField" />
+
+        <Label text="Description:" />
+        <TextField fx:id="descriptionField" />
+
+        <Label text="Number of pages:" />
+        <TextField fx:id="pagesField" />
+
+        <Label text="Daily visitors:" />
+        <TextField fx:id="visitorsField" />
+
+        <Label text="Date founded:" />
+        <DatePicker fx:id="yearFoundedPicker"/>
+
+        <!-- Vertical spacer -->
+        <Region prefHeight="20.0" />
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button onAction="#addWebsite" text="Add" />
+            <Button onAction="#cancel" text="Cancel" />
+        </HBox>
+    </children>
+</VBox>
